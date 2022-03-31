@@ -9,6 +9,7 @@ import { StatusQuerystatComponent } from './status-querystat/status-querystat.co
 import { StatusAllvarsComponent } from './status-allvars/status-allvars.component';
 import { StatusMonitorComponent } from './status-monitor/status-monitor.component';
 import { StatusAdvisorComponent } from './status-advisor/status-advisor.component';
+import { SharedModuleModule } from 'src/app/shared-module/shared-module.module';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { StatusAdvisorComponent } from './status-advisor/status-advisor.componen
   ],
   imports: [
     CommonModule,
-    GeneralStatusRoutingModule
+    GeneralStatusRoutingModule,
+    SharedModuleModule
   ]
 })
 export class GeneralStatusModule { }

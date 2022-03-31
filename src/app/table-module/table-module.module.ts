@@ -16,6 +16,7 @@ import { TableImportComponent } from './table-import/table-import.component';
 import { TablePrivilagesComponent } from './table-privilages/table-privilages.component';
 import { TableOperationsComponent } from './table-operations/table-operations.component';
 import { TableTriggersComponent } from './table-triggers/table-triggers.component';
+import { SharedModuleModule } from '../shared-module/shared-module.module';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { TableTriggersComponent } from './table-triggers/table-triggers.componen
   ],
   imports: [
     CommonModule,
-    TableModuleRoutingModule
+    TableModuleRoutingModule,
+    SharedModuleModule
   ]
 })
 export class TableModuleModule { }

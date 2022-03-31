@@ -11,6 +11,7 @@ import { SettingsNavpanelComponent } from './settings-navpanel/settings-navpanel
 import { SettingsMainpanelComponent } from './settings-mainpanel/settings-mainpanel.component';
 import { SettingsImportComponent } from './settings-import/settings-import.component';
 import { SettingsExportComponent } from './settings-export/settings-export.component';
+import { SharedModuleModule } from 'src/app/shared-module/shared-module.module';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { SettingsExportComponent } from './settings-export/settings-export.compo
   ],
   imports: [
     CommonModule,
-    GeneralSettingsRoutingModule
+    GeneralSettingsRoutingModule,
+    SharedModuleModule
   ]
 })
 export class GeneralSettingsModule { }

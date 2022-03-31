@@ -15,6 +15,7 @@ import { DatabaseRoutinesComponent } from './database-routines/database-routines
 import { DatabaseEventsComponent } from './database-events/database-events.component';
 import { DatabaseTriggersComponent } from './database-triggers/database-triggers.component';
 import { DatabaseDesignerComponent } from './database-designer/database-designer.component';
+import { SharedModuleModule } from '../shared-module/shared-module.module';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { DatabaseDesignerComponent } from './database-designer/database-designer
   ],
   imports: [
     CommonModule,
-    DatabaseModuleRoutingModule
+    DatabaseModuleRoutingModule,
+    SharedModuleModule
   ]
 })
 export class DatabaseModuleModule { }
