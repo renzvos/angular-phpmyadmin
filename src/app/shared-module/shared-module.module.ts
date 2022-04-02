@@ -6,10 +6,11 @@ import { UnderDevelopmentComponent } from './under-development/under-development
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
-import {MatTreeModule} from '@angular/material/tree';
+
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { ConsoleComponent } from './console/console.component';
 
+import {MatExpansionModule} from '@angular/material/expansion';
 
 
 @NgModule({
@@ -24,8 +25,8 @@ import { ConsoleComponent } from './console/console.component';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    MatTreeModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatExpansionModule
   ],
   exports :[
     SidebarComponent,

@@ -12,10 +12,7 @@ export class AppComponent {
   navigationstring = "Server()"
   mode = 'slide'
 
-  ngAfterViewInit(): void {
-      this.drawertoggle()
-  }
-
+ 
   drawertoggle()
   {
     if(this.drawer != undefined) this.drawer.toggle();
