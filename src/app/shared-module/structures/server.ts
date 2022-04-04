@@ -23,9 +23,9 @@ export class server {
         }
     }
 
-    loadDatabases():database[]
+    loadDatabases()
     {
-        return [new database(this,"rex"),new database(this,"rex"),new database(this,"rex")]
+        this.databases = [new database(this,"rex"),new database(this,"rex"),new database(this,"rex")]
     }
 
 

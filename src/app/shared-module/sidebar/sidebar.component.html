@@ -1,5 +1,5 @@
 <div class="container">
-<img class="logo" src = "./../../../assets/images/logo.png">
+<img class="logo" src = "assets/images/logo.png">
 
     <div *ngFor="let server of servers">
 
@@ -10,17 +10,44 @@
       <mat-expansion-panel-header>
         <mat-panel-title>
           Server - {{server.ipaddress}}
+         
         </mat-panel-title>
       </mat-expansion-panel-header>
+
+      <div *ngIf="server.databases == null">
+        <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+      </div>
       
       <div *ngFor="let db of server.databases">
 
-      <mat-expansion-panel>
+      <mat-expansion-panel (opened)="databaseOpen(db)">
         <mat-expansion-panel-header>
           <mat-panel-title>
             {{db.name}}
           </mat-panel-title>
         </mat-expansion-panel-header>
+
+        <div *ngIf="db.tables == null">
+          <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+        </div>
+        
+        <div *ngFor="let table of db.tables">
+  
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              {{table.name}}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+  
+          
+          
+          
+        </mat-expansion-panel>
+        </div>
+        
+
+
         
         
       </mat-expansion-panel>

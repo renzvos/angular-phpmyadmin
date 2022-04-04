@@ -5,6 +5,7 @@ export class database
 {
     server : server
     name : string
+    tables : table[] | null = null
 
     constructor(server : server , name : string)
     {
@@ -12,9 +13,9 @@ export class database
         this.name = name
     }
 
-    getTables():table[]
+    getTables()
     {
-        return [new table(this,"okok" ) , new table(this, "nanana")]
+        this.tables =  [new table(this,"okok" ) , new table(this, "nanana")]
     }
 
 }

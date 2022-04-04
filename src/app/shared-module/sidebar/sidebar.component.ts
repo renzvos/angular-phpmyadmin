@@ -1,5 +1,6 @@
 
 import { Component,  OnInit } from '@angular/core';
+import { database } from '../structures/database';
 import { server } from '../structures/server';
 
 
@@ -22,6 +23,19 @@ export class SidebarComponent implements OnInit {
    
 
   ngOnInit(): void {
+    
+    for(let server of this.servers)
+    {
+        server.loadDatabases()
+    }
+
   }
+
+  databaseOpen(database : database)
+  {
+    database.getTables()
+  }
+
+  
 
 }
