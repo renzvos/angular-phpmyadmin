@@ -1,7 +1,8 @@
 <?php
 require_once "../../common/common_start.php";
 
-$processId = $_POST['processId'];
+
+$databaseName = $_POST['databaseName'];
 
 /* 
 DEVELOPMENT CODE GOES HERE 
@@ -11,23 +12,20 @@ $result = $backend->Server->getServerInfo();
 
 */
 
-
 $response["development"] = true;
 
 $code = mt_rand(0,1);
 if($code == 0)
 {
     $result['status-code'] = $code;
-    $result['message'] = "Process Killed sucessfully";
+    $result['message'] = "Database Created Successfully";
 }
 else if($code == 1)
 {
     $result['status-code'] = $code;
-    $result['message'] = "Couldnt Kill Process";
-    $result['sql-response'] = "SOME KILLING FAIL ";
+    $result['message'] = "Database Creation Failed";
+    $result['sql-response'] = "SOME DATABASE FAIL";
 }
-
-
 
 
 require_once "../../common/common_end.php";
