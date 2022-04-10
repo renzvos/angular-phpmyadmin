@@ -1,0 +1,13 @@
+{
+    "name": "renzvos/angular-phpmyadmin",
+    "description": "The goal is to move from backend application to frontend ,This can avoid unnecessary reloads etc and is a contribution for all the PHP-MySQL Developers out there.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Arshad Nazir",
+            "email": "arshadnzr@email.com"
+        }
+    ],
+    "require": {}
+}
