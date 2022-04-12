@@ -1,6 +1,6 @@
 [![Alt text](https://raw.githubusercontent.com/renzvos/angular-phpmyadmin/main/branding/logowide/svg%20export.svg)](https://renzvos.com/angular-phpmyadmin)
 
-# Angular - phpmyadmin
+# [Angular - phpmyadmin](https://renzvos.com/angular-phpmyadmin)
 ## Installation
 
 ### Composer Installation
@@ -18,8 +18,8 @@ The library will be availible at <a style="color:blue">https://www.example.com/a
 
 ## Development Documentation
 
-[You can start easy and find everything here]("https://www.renzvos.com/")
+[You can put work easily and find everything here](https://www.renzvos.com/angular-phpmyadmin/documentation)
 
-## OS Contribution
+## OS Contribution Credits
 Thanks to  *Arshad Nazir*  
 Thanks to *Adwaith*
