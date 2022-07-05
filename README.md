@@ -1,6 +1,6 @@
-[![Alt text](https://raw.githubusercontent.com/renzvos/angular-phpmyadmin/main/branding/logowide/svg%20export.svg)](https://renzvos.com/angular-phpmyadmin)
+[![Alt text](https://raw.githubusercontent.com/renzvos/angular-phpmyadmin/main/branding/logowide/svg%20export.svg)](https://www.renzvos.com/angular-phpmyadmin)
 
-# [Angular - phpmyadmin](https://renzvos.com/angular-phpmyadmin)
+# [Angular - phpmyadmin](https://www.renzvos.com/angular-phpmyadmin)
 ## Installation
 
 ### Composer Installation
